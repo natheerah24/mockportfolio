@@ -1,0 +1,273 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #da95a8;
+}
+.header {
+  height: 50px;
+  position: sticky;
+  top: 0;
+}
+/* navbar */
+nav#navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  padding: 1 rem;
+  position: sticky;
+  top: 0;
+}
+ul.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  gap: 20px;
+  font-family: monospace;
+  font-size: 20px;
+  margin-right: 50px;
+}
+a.link {
+  padding: 10%;
+  color: black;
+  text-decoration: none;
+  font-family: serif;
+}
+/* navbar */
+
+/* landing */
+section#Landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./landing\ page\ background.jpg);
+  background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+#Landing h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+}
+#Landing h2 {
+  color: #6f6f6f;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+/* landing */
+/* about */
+#About {
+  min-height: 100vh;
+  padding: 5% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+.column {
+  width: 50%;
+}
+
+#About h1 {
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  border-bottom: 3px solid black;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  width: 50%;
+}
+
+.image {
+  display: flex;
+}
+
+section#about {
+  padding: 5% 10%;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+
+meter {
+  width: 100%;
+}
+
+/* about */
+/* contacts */
+form {
+  width: 50%;
+  font-size: 25px;
+  margin-left: 10%;
+}
+textarea {
+  width: 50%;
+  font-size: 25px;
+}
+.my-details {
+  color: black;
+  display: flex;
+  height: 400px;
+  font-size: 25px;
+  max-width: min-content;
+  margin-top: 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul {
+  margin-left: 4vh;
+}
+* {
+  box-sizing: border-box;
+}
+input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 61px;
+  resize: vertical;
+  margin-left: 10%;
+}
+input[type="submit"] {
+  background-color: #041cf1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 25%;
+  margin-left: 36vw;
+  margin-top: 3vh;
+}
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+.container {
+  border-radius: 5px;
+}
+textarea#subject {
+  height: 200px;
+  background-color: white;
+}
+input {
+  background-color: white;
+}
+.row1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.direct-contact {
+  width: 300px;
+}
+.column2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#Contact h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid black;
+  width: fit-content;
+  margin-inline: auto;
+}
+ul.my-details {
+  gap: 20px;
+}
+/* contacts */
+/* projects */
+#Projects {
+  min-height: 100vh;
+  padding: 5% 10%;
+}
+#Projects h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid black;
+  width: fit-content;
+  margin-inline: auto;
+}
+.project-container {
+  padding: 40px;
+}
+
+#Testimonials {
+  min-height: 100vh;
+  padding: 5% 10%;
+}
+.T {
+  text-align: center;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid black;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.row3 {
+  display: flex;
+  gap: 40px;
+  padding: 5%;
+}
+.image3 {
+  width: 300px;
+  height: 450px;
+}
+.imag {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+meter::-webkit-meter-optimum-value {
+  background: rgb(214, 65, 90);
+}
+meter::-webkit-meter-bar {
+  background: blue;
+  background-color: aliceblue;
+  box-shadow: 3px 3px 3px black;
+}
+/* .layout {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+} */
+
+/* .MEDIA QUERIES */
+/* .WIDTH OF MEDIA ALWAYS FROM LARGETS TO SMALLEST */
+@media screen {
+}

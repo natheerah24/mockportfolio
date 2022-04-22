@@ -207,6 +207,7 @@ input {
 }
 .column2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .column1 h1 {
@@ -277,6 +278,18 @@ meter::-webkit-meter-bar {
 /* .WIDTH OF MEDIA ALWAYS FROM LARGETS TO SMALLEST */
 @media screen and (max-width: 700px) {
   .layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #About {
     display: flex;
     flex-wrap: wrap;
   }

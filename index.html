@@ -154,6 +154,7 @@
                 <h3>Natheerah Abrahams</h3>
                 <p>Innovative and deadline-driven Web Developer with 1+ years of experience designing and developing user-centered web applications from initial concept to final, polished deliverable.</p>
               </li>
+            </ul>
               <ul>
                 <li> Cape Town, South Africa</li>
                 <li>(+27) 67 863 5117</li>
@@ -194,11 +195,13 @@
                       <h6>Sanlam</h6>
                       <h6>June 2017</h6>
                       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi itaque reiciendis incidunt fugit libero, ut quibusdam, obcaecati saepe, repellendus quasi. Dolor amet sint veritatis at. Debitis delectus quam soluta.</p>
+                    
                     </li>
+                    </ul>
                 </div>
               </div>
             </div>
-            </section>
+            
            <!-- End of resume -->
 
     <!-- start of projects -->
@@ -262,12 +265,12 @@
     </div>
   </div>
   </div>
-</div>
     </section>
     <!-- end of testimonials -->
     <!-- start of contacts -->
     <!-- <div class="layout"> -->
     <div class="container">
+      
  <section id="Contact" class="container shadow-sm mt-3 p-5">
       <div class="row">
   <div class="col-md-6">
@@ -277,21 +280,21 @@
   method="POST"
 >
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name...">
-          <label for="Sname">Surname</label>
-          <input type="text" id="Sname" name="Surname" placeholder="Your Surname...">
-          <label for="Contact">Contact</label>
-           <input  type="text" id="No." name="Number" placeholder="Your cell...">
+          <input required class="form-control"  type="text" id="fname" name="firstname" placeholder="Your name...">
+          <label   for="Sname">Surname</label>
+          <input required class="form-control" type="text" id="Sname" name="Surname" placeholder="Your Surname...">
+          <label   for="Contact">Contact</label>
+           <input required type="text" id="No." name="Number" placeholder="Your cell...">
        <label>
          <label for="email">Email</label>
-         <input id="email" placeholder="Your Email..." type="email" name="Email"/>
+         <input  required type="email" id="email" placeholder="Your Email..." type="email" name="Email"/>
        </label>
         <label for="subject">Message us</label>
          <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-          <input type="submit" value="Submit">
-    </div>
-        </form>
-        
+         <button type="submit" class="btn btn-primary  d-none"  name="send">Send</button>
+    
+
+            
         <div class="col md-6">
         <ul class="my-details">
           <h1>Get in touch</h1>
@@ -303,10 +306,37 @@
         <i class="fa-solid fa-phone"></i>
         <i class="fa-brands fa-linkedin"></i>
       </ul></div>
-</div>    
+      
+     
+   
+ <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  SEND
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirm Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body ">
+      Please check if details entered below are correct.
       </div>
-    </section>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" name="send">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </form>
+
+
+ 
+      
+   
 
      <!-- end of contacts -->
      <footer>© Copyright 2022. All Rights Reserved
